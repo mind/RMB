@@ -1,0 +1,16 @@
+DATA_DIR: /home/ray/DataSet/RMB/dataset  # dataset path
+ROOT_DIR: /home/ray/DataSet/RMB/ctpn_trained # trained models and logs folder
+EXP_DIR: ctpn_rmb
+LOG_DIR: ctpn_log
+IS_MULTISCALE: False
+NET_NAME: VGGnet
+ANCHOR_SCALES: [16]
+NCLASSES: 2
+USE_GPU_NMS: True  # whether to use nms implemented in cuda or not, in Windows must be False
+TEST:
+  HAS_RPN: True
+  DETECT_MODE: H
+  # H represents horizontal mode, O represents oriented mode, default is H
+  # checkpoints_path: E:\PyProjects\Codes\text-detection-ctpn-win/checkpoints\
+  # checkpoints_path: /home/ray/DataSet/RMB/ctpn_trained/output/ctpn_rmb/rmb_db
+  # the model I provided is in checkpoints/, if you train the model by yourself,it will be saved in output/

@@ -1,0 +1,8 @@
+tqdm
+opencv-python
+Shapely
+matplotlib
+numpy
+tensorflow-gpu
+Cython
+ipython
